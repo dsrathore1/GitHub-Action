@@ -5,13 +5,15 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node}}
-      - name: Your Node Application ready to go
-        run: cd backend
+        name: Your Node Application ready to go
       - run: npm install
       - run: npm start
 
