@@ -1,0 +1,31 @@
+{
+  "name": "github-action-learning",
+  "version": "1.0.0",
+  "description": "This repo is to learn GitHub Actions",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsrathore1/GitHub-Action.git"
+  },
+  "keywords": [
+    "NODE-JS"
+  ],
+  "author": "Kailash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsrathore1/GitHub-Action/issues"
+  },
+  "homepage": "https://github.com/dsrathore1/GitHub-Action#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
