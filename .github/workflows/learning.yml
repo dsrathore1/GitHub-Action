@@ -10,9 +10,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node}}
-      - working-directory: ./backend
       - name: Your Node Application ready to go
-        run: cd backend
       - run: npm install
       - run: npm start
 
