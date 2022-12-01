@@ -1,2 +1,6 @@
-name: First-Action
+name: First GitHub Actions
 on: [push]
+
+jobs:
+  build:
+    run-on: ubuntu-latest
