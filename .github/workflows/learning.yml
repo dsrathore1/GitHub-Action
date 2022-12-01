@@ -1,6 +1,12 @@
-name: First GitHub Actions
-on: [push]
+name: GitHub Actions
+run-name: ${{github.actor}} learning github actions
+on: push
 
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a sample github actions
+        run: echo "This workflow runs successfully"
