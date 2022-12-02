@@ -19,5 +19,8 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Your website is running on http://localhost:${PORT}`)
+    console.log(`Your website is running on http://localhost:${PORT}`);
+    setTimeout(() => {
+        process.exit(0);
+    }, 5000);
 });
