@@ -8,6 +8,10 @@ on:
 jobs:
   build_and_deploy: # Name of job
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+        
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -18,10 +22,11 @@ jobs:
           node-version: 20
 
       - name: Node application's initial commands
-        working-directory: ./backend
+        # working-directory: ./backend
         run: npm install
 
       - name: Check node app start
+        # working-directory: ./backend
         run: |
           npm start
           npm run test
