@@ -1,5 +1,5 @@
 name: Spare branch workflow
-run-name: New change committed to ${{GITHUB_REF##*/}} by ${{github.run_number}} times
+run-name: New change committed to Spare Branch by ${{github.run_number}} times
 #? this is called context
 
 on:
