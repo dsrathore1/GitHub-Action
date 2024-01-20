@@ -5,7 +5,9 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "All fine!!! 🎉🎉"
   },
   "repository": {
     "type": "git",
@@ -14,14 +16,12 @@
   "keywords": [
     "NODE-JS"
   ],
-  "author": "Kailash",
+  "author": "Rocky",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dsrathore1/GitHub-Action/issues"
   },
-  "homepage": "https://github.com/dsrathore1/GitHub-Action#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

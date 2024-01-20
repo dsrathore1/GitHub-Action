@@ -1,22 +1,19 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import bodyParser from "body-parser";
+import routes from "./Routes/routes.js";
 
-dotenv.config({ path: "config.env" });
+dotenv.config({ path: "./.env" });
 
 const app = express();
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 7000;
 
-
-app.use(bodyParser.json({ extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
-    res.send("<h1>Hello world</h1>")
-});
+app.use(routes);
 
 app.listen(PORT, () => {
     console.log(`Your website is running on http://localhost:${PORT}`);
