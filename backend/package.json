@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "echo 'All fine!!! 🎉🎉'"
+    "test": "echo '🎉🎉 All fine!!! 🎉🎉'"
   },
   "repository": {
     "type": "git",
